@@ -79,6 +79,7 @@
                 <?php endif; ?>
               </select>
             </p>
+            <p>Müşteri Onayı: <?php echo empty($order['customer_confirm']) ? '<span class="badge badge-warning">Sipariş Onaylanmamış</span>' : '<span class="badge badge-success">Sipariş Onaylanmış</span>' ?></p>
             <p>Sipariş Numarası: <span>#<?= $order['slug'] ?></span></p>
             <p>Sipariş ID: <span><?= $order['id'] ?></span></p>
             <p>Oluşturma Tarihi: <span><?= $order['created_at'] ?></span></p>

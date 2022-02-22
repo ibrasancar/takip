@@ -689,10 +689,15 @@ class Orders extends BaseController
 
     public function confirmCustomer()
     {
-        $slug = $this->request->getVar('slug')
+        $slug = $this->request->getVar('slug');
 
+        $order_model = new OrdersModel();
+        $time = new Time('now');
 
-
+        $order_model->set('customer_confirm', $time->toDateTimeString())->where('slug', $slug)->update();
+        $data = [
+            'success' => 'Başarıyla onaylandı!'
+        ];
         return $this->response->setJSON($data);
     }
 }

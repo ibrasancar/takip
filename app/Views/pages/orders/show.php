@@ -80,9 +80,15 @@
             <p>Kapora <span><?= $order['deposit'] ?></span></p>
             <p>İndirim <span><?= $order['discount'] ?></span></p>
             <p class="bold">Toplam <span><?= $order['total_price'] ?></span></p>
-            <div class="invoice-info-actions">
-              <a href="#" class="btn btn-primary" id="complete_order" type="button" data-slug="<?= $order['slug'] ?>">Siparişi Onayla</a>
-            </div>
+            <?php if (empty($order['customer_confirm'])) : ?>
+              <div class="invoice-info-actions">
+                <a href="#" class="btn btn-primary" id="complete_order" type="button" data-slug="<?= $order['slug'] ?>">Siparişi Onayla</a>
+              </div>
+            <?php else : ?>
+              <div class="invoice-info-actions">
+                <span class="badge badge-success">Sipariş Müşteri Tarafından Onaylanmış</span>
+              </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
