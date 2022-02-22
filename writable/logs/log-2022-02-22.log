@@ -1,0 +1,27 @@
+CRITICAL - 2022-02-22 10:43:05 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\takip\app\Models\OrdersModel.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 163)
+#1 C:\xampp\htdocs\takip\app\Libraries\Email.php(117): App\Models\OrdersModel->getOrderByID(3)
+#2 C:\xampp\htdocs\takip\app\Controllers\Orders.php(192): App\Libraries\Email->sendNewOrderToManufacturer(3, 'new')
+#3 C:\xampp\htdocs\takip\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Orders->edit(3)
+#4 C:\xampp\htdocs\takip\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#5 C:\xampp\htdocs\takip\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\takip\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-22 10:43:12 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\takip\app\Models\OrdersModel.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 163)
+#1 C:\xampp\htdocs\takip\app\Libraries\Email.php(117): App\Models\OrdersModel->getOrderByID(3)
+#2 C:\xampp\htdocs\takip\app\Controllers\Orders.php(192): App\Libraries\Email->sendNewOrderToManufacturer(3, 'new')
+#3 C:\xampp\htdocs\takip\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Orders->edit(3)
+#4 C:\xampp\htdocs\takip\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#5 C:\xampp\htdocs\takip\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\takip\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-22 10:43:19 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\takip\app\Models\OrdersModel.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 163)
+#1 C:\xampp\htdocs\takip\app\Libraries\Email.php(117): App\Models\OrdersModel->getOrderByID(3)
+#2 C:\xampp\htdocs\takip\app\Controllers\Orders.php(192): App\Libraries\Email->sendNewOrderToManufacturer(3, 'new')
+#3 C:\xampp\htdocs\takip\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Orders->edit(3)
+#4 C:\xampp\htdocs\takip\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#5 C:\xampp\htdocs\takip\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\takip\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
